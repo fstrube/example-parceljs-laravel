@@ -2,21 +2,37 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
-        "dev": "vite"
+        "build": "parcel build",
+        "dev": "parcel watch --watch-dir resources/"
+    },
+    "targets": {
+        "app.js": {
+            "distDir": "public/build/",
+            "source": "resources/js/app.js"
+        },
+        "app.css": {
+            "distDir": "public/build/",
+            "source": "resources/css/app.scss"
+        }
+    },
+    "alias": {
+        "@inertiajs/core": "@inertiajs/core/dist/index.esm.js"
     },
     "devDependencies": {
         "@inertiajs/vue3": "^2.0.3",
+        "@parcel/resolver-glob": "^2.13.3",
+        "@parcel/transformer-sass": "^2.13.3",
+        "@parcel/transformer-vue": "^2.13.3",
         "@picocss/pico": "^2.0.6",
-        "@vitejs/plugin-vue": "^5.2.1",
         "autoprefixer": "^10.4.20",
         "axios": "^1.7.4",
+        "buffer": "^6.0.3",
         "concurrently": "^9.0.1",
-        "laravel-vite-plugin": "^1.2.0",
+        "parcel": "^2.13.3",
         "postcss": "^8.4.47",
+        "process": "^0.11.10",
         "sass-embedded": "^1.83.4",
         "tailwindcss": "^3.4.13",
-        "vite": "^6.0.11",
         "vue": "^3.5.13"
     }
 }

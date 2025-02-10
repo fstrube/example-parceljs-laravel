@@ -11,9 +11,10 @@
         <!-- Styles / Scripts -->
         @inertiaHead
         @routes
+        <link rel="stylesheet" href="{{ asset('build/css/app.css') }}" />
     </head>
     <body>
         @inertia
-        @vite(['resources/css/app.scss', 'resources/js/app.js'])
+        <script src="{{ asset('build/js/app.js') }}"></script>
     </body>
 </html>

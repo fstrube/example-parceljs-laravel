@@ -21,7 +21,7 @@
 <script setup>
     import { ref, defineProps } from 'vue';
     import { useForm } from '@inertiajs/vue3';
-    import AppLayout from '@/layouts/App.vue';
+    import AppLayout from '~/layouts/App.vue';
 
     const form = useForm({
         email: '',

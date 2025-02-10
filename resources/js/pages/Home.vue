@@ -8,5 +8,5 @@
 </template>
 
 <script setup>
-    import AppLayout from '@/layouts/App.vue';
+    import AppLayout from '~/layouts/App.vue';
 </script>
