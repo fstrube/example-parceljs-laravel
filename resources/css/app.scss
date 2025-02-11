@@ -1,0 +1,11 @@
+@use '@picocss/pico/scss/pico';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header,
+main,
+footer {
+    @extend .container;
+}
